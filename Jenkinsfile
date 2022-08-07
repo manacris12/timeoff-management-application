@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'sudo npm install -g node-gyp'
+                sh 'npm install -g node-gyp'
                 sh 'npm install' 
             }
         }
